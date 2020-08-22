@@ -1,6 +1,6 @@
 package com.dp.Decorator;
 
-public class DecoratorClient {
+public class ClientApp {
     public static void main(String[] args) {
         var plainBurger = new PlainBurger();
 

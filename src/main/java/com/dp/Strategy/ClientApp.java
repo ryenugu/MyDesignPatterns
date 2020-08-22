@@ -7,7 +7,7 @@ interface SellingStrategy {
 }
 
 @Slf4j
-public class Main {
+public class ClientApp {
 
     public static void main(String[] args) {
 
