@@ -1,4 +1,4 @@
-package com.zircoa.Decorator;
+package com.dp.Decorator;
 
 public interface Burger {
 

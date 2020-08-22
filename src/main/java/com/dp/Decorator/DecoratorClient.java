@@ -1,4 +1,4 @@
-package com.zircoa.Decorator;
+package com.dp.Decorator;
 
 public class DecoratorClient {
     public static void main(String[] args) {
