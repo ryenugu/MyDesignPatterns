@@ -4,6 +4,10 @@ public class ClientApp {
     public static void main(String[] args) {
         var plainBurger = new PlainBurger();
 
+      /*
+      Decorate Plain Burger with additional Condiments
+       */
+
         FancyBurger fancyBurger = new FancyBurger(plainBurger);
         fancyBurger.addHalapenos(true);
         fancyBurger.addMushRooms(true);
@@ -17,6 +21,9 @@ public class ClientApp {
 class PlainBurger implements Burger {
     double cost = 0;
 
+    /**
+     * Returns a Plain Burger with  Base condiments only
+     */
     public PlainBurger() {
         addBun(true);
         addCheese(true);
@@ -41,11 +48,18 @@ class PlainBurger implements Burger {
     }
 }
 
+/**
+ * Fancy Burger here
+ * Yummy condiments
+ */
 class FancyBurger implements Burger {
     double cost;
 
     PlainBurger plainBurger;
 
+    /**
+     * @param plainBurger
+     */
     public FancyBurger(PlainBurger plainBurger) {
         this.plainBurger = plainBurger;
         this.cost = plainBurger.cost;
